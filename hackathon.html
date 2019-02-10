@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides 
+       {
+       	display:none;
+       }
+.dropbtn {
+    background-color: transparent;
+    color: #EAE2F1  ;
+    padding: 16px;
+    font-size: 26px;
+    border: none;
+    font-weight: bolder;
+    position: absolute;
+    top: 5px;
+    right: 20px;
+}
+
+.dropdown {
+    position: absolute;
+    display: inline-block;
+    top: 5px;
+    right: 20px;}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 20px;
+    top: 5px;
+    padding-top: 56px;
+    text-align: right;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+
+   
+}
+
+.dropdown-content a:hover {background-color: indianred;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: transparent;
+}
+.image1 {
+      width: 100px;
+         height:50px;
+         float: left;
+         padding-left: 50px;
+       
+}  
+.image1:hover {
+    width: 300px;
+    height: 300px;
+}
+</style>
+</head>
+<body style="background-image: url(bg1.jpg);color: white;">
+<div class="dropdown">
+  <button class="dropbtn">Menu</button>
+  <div class="dropdown-content">
+    <a href="hackathon.html">HOME</a>
+    <a href="collection.html">COLLECTION</a>
+    <a href="form.html">LOGIN</a>
+    <a href="about.html">ABOUT US</a>
+    <a href="contact.html">CONTACT US</a>
+  </div>
+</div>
+
+
+
+
+<div class="w3-content w3-section" style="max-width:100%;margin-top: 0px;padding-top: -10px;">
+  <img class="mySlides" src="3rd.jpg" style="width:100%;height: 600px;">
+  <img class="mySlides" src="2nd.jpg" style="width:100%;height: 600px;">
+    <img class="mySlides" src="bg10.jpg" style="width:100%;height: 600px;">
+      <img class="mySlides" src="bg11.jpg" style="width:100%;height: 600px;">
+
+
+</div>
+
+<script type="text/javascript">
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+<div style="padding-top: 180px;
+       padding-left: 50px;
+       height: 50px;
+       width: 1400px;
+       display: inline-block;" >
+    <div class="image1">
+      <img style="width: 250px;
+         height:250px;
+         float: left;
+         border-radius: 50%;" src="7th.jpg">
+    </div>
+    <div style="width: 100px;
+         height:50px;
+         float: left;
+         padding-left: 250px; ">
+      <img style="width: 250px;
+         height:250px;
+         float: left;
+         border-radius: 50%;" src="8th.jpg">
+    </div>
+    <div style="width: 100px;
+         height:50px;
+         float: left;
+         padding-left: 310px; ">
+    <img style="width: 250px;
+         height:250px;
+         float: left;
+         border-radius: 50%;" src="5th.jpg">	
+    </div>
+
+
+    <div style=" width: 350px;
+        height: 250px;
+        float: right;
+        font-style: italic;
+        font-family: sans-serif;
+        text-align: center;
+        padding-right: 50px;"
+>
+    	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt, nulla in luctus commodo, est nunc scelerisque elit, non sodales enim metus nec odio. Aenean luctus lectus non urna viverra, nec tempor nisl efficitur. Suspendisse eget neque laoreet ipsum sollicitudin pharetra eu id orci. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce fringilla erat non magna euismod semper. </p>
+    </div>	
+</div>
+
+<div style="  padding-top: 400px;
+       padding-right: 20px;
+       height: 50px;
+       width: 1400px;
+       display: inline-block;
+       -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
+    transition: width 2s, height 2s, transform 2s;"
+>
+           <div style="width: 100px;
+         height:50px;
+         float: right;
+         padding-right: 50px;">
+         <img style="width: 250px;
+         height:250px;
+         float: right;
+         border-radius: 50%;" src="13th.jpg">
+       </div>
+       <div style="width: 100px;
+         height:50px;
+         float: right;
+         padding-right: 250px; ">
+         <img style="width: 250px;
+         height:250px;
+         float: right;
+         border-radius: 50%;" src="14thjpg.jpeg">
+       </div>
+    <div style="width: 100px;
+         height:50px;
+         float: right;
+         padding-right: 310px; ">
+    <img style="width: 250px;
+         height:250px;
+         float: right;
+         border-radius: 50%;
+                   " src="6th.jpg">	
+    </div>
+
+
+    <div style=" width: 350px;
+        height: 250px;
+        float: left;
+        font-style: italic;
+        font-family: sans-serif;
+        padding-left: 30px;
+        text-align: center;"
+>
+    	<p>Ut fermentum orci lectus, sed facilisis purus dapibus at. Nulla neque neque, pulvinar ut lacus vitae, sagittis mollis velit. Nullam faucibus purus justo. Proin pharetra tempor nisl eget semper. Curabitur vehicula tristique viverra. Pellentesque suscipit odio tellus, vitae cursus ante feugiat sed. Aenean a risus in dolor accumsan malesuada. Sed finibus lacinia est, quis tincidunt mauris pretium vitae. Pellentesque sed venenatis velit. </p>
+    </div>	
+</div>
+
+<div style=" padding-top: 400px;
+       padding-left: 50px;
+       height: 50px;
+       width: 1400px;
+       display: inline-block;">
+       <div style="width: 100px;
+         height:50px;
+         float: left;
+         padding-left: 50px; ">
+      <img style="width: 250px;
+         height:250px;
+         float: left;
+         border-radius: 50%;" src="9th.jpg">
+    </div>
+    <div style="width: 100px;
+         height:50px;
+         float: left;
+         padding-left: 250px; ">
+      <img style="width: 250px;
+         height:250px;
+         float: left;
+         border-radius: 50%;" src="10th.jpg">
+    </div>
+    <div style="width: 100px;
+         height:50px;
+         float: left;
+         padding-left: 310px; ">
+    <img style="width: 250px;
+         height:250px;
+         float: left;
+         border-radius: 50%;
+
+                   " src="jeans.jpg">	
+    </div>
+
+
+    <div style=" width: 350px;
+        height: 250px;
+        float: right;
+        font-style: italic;
+        font-family: sans-serif;
+        text-align: center;
+        padding-right: 50px;"
+>
+    	<p>Nam eget leo faucibus, pellentesque justo vitae, pretium dolor. Mauris ut tortor metus. Aliquam tempus sodales mauris, vel varius augue porttitor venenatis. Sed vitae aliquam lacus, a eleifend quam. Nulla nec lobortis enim. Aliquam non gravida leo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent at dui ultrices, scelerisque mauris quis, dapibus urna. In turpis turpis, laoreet porttitor diam eu, ullamcorper tempor nisl. Suspendisse congue magna justo, ac molestie neque vehicula ut. </p>
+    </div>	
+</div>
+
+<div style=" padding-top: 400px;
+       padding-right: 20px;
+       height: 50px;
+       width: 1400px;
+       display: inline-block;">
+       <div style="width: 100px;
+         height:50px;
+         float: right;
+         padding-right: 50px;">
+         <img style="width: 250px;
+         height:250px;
+         float: right;
+         border-radius: 50%;" src="11th.jpg">
+       </div>
+       <div style="width: 100px;
+         height:50px;
+         float: right;
+         padding-right: 250px; ">
+         <img style="width: 250px;
+         height:250px;
+         float: right;
+         border-radius: 50%;" src="12th.jpg">
+       </div>
+    <div style="width: 100px;
+         height:50px;
+         float: right;
+         padding-right: 310px; ">
+    <img style="width: 250px;
+         height:250px;
+         float: right;
+         border-radius: 50%;" src="4th.jpg">	
+    </div>
+
+
+    <div style=" width: 350px;
+        height: 250px;
+        float: left;
+        font-style: italic;
+        font-family: sans-serif;
+        padding-left: 30px;
+        text-align: center;"
+>
+    	<p>Suspendisse potenti. Quisque id sem consequat, consequat arcu quis, varius urna. In quis suscipit justo. Praesent feugiat fermentum congue. Ut purus dui, cursus non eros egestas, ultricies condimentum ipsum. Duis sed auctor nibh. Suspendisse potenti. Praesent maximus, nunc vel lacinia posuere, eros urna gravida nisl, at eleifend lectus mi vitae nisi. Mauris congue faucibus nunc sit amet molestie. Curabitur eget imperdiet metus. Mauris sit amet consectetur sapien.</p>
+    </div>	
+</div>
+
+</body>
+</html>
